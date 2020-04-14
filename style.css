@@ -1,0 +1,226 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.main-container {
+    margin: 0 auto;
+    width: 336px;
+    border-radius: 11px;
+    margin-top: 100px;
+    border: 1px solid  #E5E5E5;;
+}
+
+.header {
+    width: 336px;
+    height: 30.45px;
+    background: #FFDC40;
+    border-radius: 11px 11px 0 0;   
+}
+
+h1 {
+    font-family: 'Roboto', sans-serif;
+    margin-top: 20px;
+    text-align: center;
+
+}
+
+.sort-alphab {
+    width: 286px;
+    margin: 0 auto;
+    position: relative;
+    
+
+}
+
+.sort-alphab img {
+    float: right;
+    cursor: pointer;
+
+}
+
+.element {
+    transform: scaleY(-1);
+}
+
+.element2 {
+    transform: scaleY(1);
+}
+
+.first {
+    position: relative;
+}
+
+.info {
+    display: flex;
+    justify-content: space-around;
+    width: 300px;
+    border-radius: 10px;
+    margin: 0 auto;
+    height: 44px;
+    margin-top: 26px;
+    border: 1px solid  #E5E5E5;;
+
+}
+.box-relative {
+    position: relative;
+}
+
+.first img:hover {
+    -ms-transform: scale(1.5); /* IE 9 */
+     -webkit-transform: scale(1.5); /* Safari 3-8 */
+     transform: scale(1.5);
+    
+}
+
+#deleteinput img:hover {
+    background-color: #833AE0;
+    border-radius: 50%;
+}
+.position-box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.input {
+    height: 100%;
+    border: none;
+}
+
+.input:hover {
+    border: 2px solid #FFDC40;
+}
+
+.second {
+    width: 173px;
+    position: relative;
+}
+
+
+
+.add {
+    width: 150px;
+    height: 46px;
+    margin: 0 auto;
+    margin-top: 14px;
+    position: relative;
+    display: flex;
+    line-height: 46px;
+    text-align: center;
+    border-radius: 71px;
+    background: #833AE0;
+    cursor: pointer;
+    color: white;
+}
+
+.plus {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    background: #9953F1;
+    color: #FFFFFF;
+}
+
+.button {
+    background: #833AE0;
+    border: none;
+    font-size: 14px;
+    color: #FFFFFF;
+    padding: 11px;
+}
+
+ul {
+    margin: 0;
+    padding:5px; 
+    position: relative;
+  }
+
+ul li {
+    position: relative;
+    padding: 12px 8px 12px 40px;
+    list-style-type: none;
+    font-size: 18px;
+    transition: 0.2s;
+    width: 300px;
+    margin: 0 auto;
+    border-radius: 8px;
+ 
+    /* make the list items unselectable */
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+  
+ul li:hover {
+    background: #FFDC40;
+}
+
+.remove-list {
+      float: right;
+}
+
+.remove {
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    right: 0;
+}
+
+.remove:hover {
+    background: #833AE0;
+    border-radius: 50%;
+}
+  
+.draggable.dragging {
+    opacity: .5;
+}
+
+.myTextInput {
+    height: 30px;
+    border: none;
+}
+
+.myTextInput:hover {
+    border: 3px solid #833AE0 ;
+}
+
+.drag {
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    left: 23px;
+}
+
+.drag:hover {
+    -ms-transform: scale(1.5); /* IE 9 */
+    -webkit-transform: scale(1.5); /* Safari 3-8 */
+    transform: scale(1.5);
+}
+
+.absolute {
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 99999;
+    background: tomato !important;
+    cursor: pointer;
+  }
+
+  .cursor {
+    position: absolute;
+    left: 0;
+    top: 0;
+    border: 2px solid green;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    transition: all 0.4s;
+  }
+
+  .draggable.dragging {
+    opacity: .5;
+  }

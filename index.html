@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>To-do list</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<div class="main-container ">
+    <div class="header"></div>
+    <h1>To-Do List</h1>
+    
+        <div class="sort-alphab" onclick="sortList()" id="sort">
+            <img src="image/sort.png" alt="sort-image" id="imagesort"/>
+        </div>
+        <div class="info">
+            <div class="first box-relative" onclick="HandlerDrag()">
+                <img src="image/dragdrop.png" alt="dragdrop" class="position-box"/>
+            </div>
+            <div class="second">
+                <input type="text" id="myInput" class="position-box input">
+            </div>    
+            <div class="box-relative" id="deleteinput" onclick="deleteInput()" >
+                <img src="image/delete.png" alt="delete"  class="position-box "  />
+                <!-- <img src="image/delete2.png" alt="delete"  class="position-box "/> -->
+                
+            </div>
+                
+        </div>
+        <ul id="myUL" class="container">
+
+            <!-- <li class="draggable" draggable="true"><input type="text"></li>   -->
+            <!-- <li class=" draggable"  draggable="true">dgh</li> --> 
+            <!-- <li  class="draggable" draggable="true">kiku</li>
+            <li  class="draggable" draggable="true">4</li>
+            <li  class="draggable" draggable="true">5</li>   -->
+          </ul>
+       
+
+       
+    <div class="add" onclick= "newElement()" type="button" class="button">
+        <span class="plus">+</span>
+        <span>Добавить</span>
+        
+    </div>
+    
+
+</div>
+<script src="index.js"></script>
+</body>    
+</html>
