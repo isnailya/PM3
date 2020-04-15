@@ -73,6 +73,7 @@ function sortList() {
       listArray.push(draggables[i].value);
     }
       listArray.sort();
+      listArray.sort((a,b)=> a-b);// for number
       list = document.getElementById('myUL');
       isalpha=true;
 
